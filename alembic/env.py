@@ -6,8 +6,7 @@ from sqlalchemy import pool
 from alembic import context
 
 from app.db.base import Base
-from app.models import user  # penting supaya model ke-load
-from app.models import token_blacklist
+import app.models
 from app.core.config import settings
 
 # this is the Alembic Config object, which provides
